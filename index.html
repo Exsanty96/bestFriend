@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050208">
+  <meta name="description" content="Una sorpresa de cumpleaños para una amistad inolvidable.">
+  <title>Una sorpresa para mi mejor amiga 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="canvas" aria-hidden="true"></canvas>
+
+  <!-- PANTALLA INICIAL -->
+  <main id="inicio" class="pantalla-inicial">
+    <div class="estrellas" aria-hidden="true">✦　·　✧　·　✦</div>
+
+    <p class="etiqueta">✦ UNA PEQUEÑA SORPRESA PARA MI MEJOR AMIGA ✦</p>
+
+    <h1>
+      Tengo algo<br>
+      <span>especial para ti</span>
+    </h1>
+
+    
+
+    <button id="botonSorpresa" class="boton-neon">
+      VER SORPRESA <span>♡</span>
+    </button>
+
+    <p class="pista">Hecho con cariño, para alguien muy especial</p>
+  </main>
+
+  <!-- HISTORIA ANIMADA -->
+  <main id="historia" class="historia oculto">
+    <div class="contador" id="contador">CAPÍTULO 01</div>
+
+    <section id="escena" class="escena">
+      <div id="decoracion" class="decoracion">🌸</div>
+
+      <div class="personajes">
+        <div id="chico" class="personaje chico" aria-label="El chico">
+          <div class="emoji-personaje">👨🏻‍🎓</div>
+          <span>Él</span>
+        </div>
+
+        <div id="chica" class="personaje chica" aria-label="La chica">
+          <div class="emoji-personaje">👩🏻‍🎓</div>
+          <span>Ella</span>
+        </div>
+      </div>
+
+      <div class="dialogo">
+        <h2 id="tituloEscena">Todo comenzó en la universidad...</h2>
+        <p id="textoEscena">
+          Dos personas que no imaginaban que terminarían
+          formando una amistad tan especial.
+        </p>
+      </div>
+
+      <div class="progreso">
+        <div id="barraProgreso"></div>
+      </div>
+
+      <p id="indicacion" class="indicacion">
+        Una historia de amistad ✨
+      </p>
+    </section>
+
+    <button id="saltar" class="boton-saltar">
+      Continuar <span>→</span>
+    </button>
+  </main>
+
+  <!-- FINAL CON LA FOTO -->
+  <main id="final" class="final oculto">
+    <div class="final-destellos">✧ ✦ ✧</div>
+
+    <p class="etiqueta">PARA UNA PERSONA INOLVIDABLE</p>
+
+    <h1>Feliz cumpleaños Jossi,<br><span>mejor amiga</span> 💗</h1>
+
+    <div class="marco-foto">
+      <img
+        id="fotoAmiga"
+        src="jossi.png"
+        alt="Un recuerdo especial con mi mejor amiga"
+      >
+      <div id="avisoFoto" class="aviso-foto">
+        📸 Aquí irá nuestra foto especial
+      </div>
+    </div>
+
+    <article class="dedicatoria">
+      <p>
+        Querida Jossi Hoy celebro tu vida, pero también agradezco la suerte
+        de haberte encontrado en la mía.
+      </p>
+
+      <p>
+        Gracias por cada risa, cada conversación, cada recuerdo
+        y hasta por esos momentos difíciles que nos enseñaron
+        el verdadero valor de una amistad.
+      </p>
+
+      <p>
+        La vida no siempre será perfecta y quizá tengamos días
+        buenos, días malos o caminos que por momentos parezcan
+        alejarnos. Pero quiero que recuerdes algo:
+        <strong>tu amistad ocupa un lugar muy especial en mi corazón.</strong>
+      </p>
+
+      <p>
+        No necesito que todo sea perfecto para valorar lo que
+        tenemos. Me quedo con los recuerdos, con lo aprendido
+        y con la alegría de saber que conocí a una persona
+        como tú.
+      </p>
+
+      <p>
+        Deseo que este nuevo año de vida te regale salud,
+        felicidad, sueños cumplidos y miles de razones para sonreír.
+        Que nunca te falten personas que te quieran de verdad
+        ni fuerzas para seguir adelante.
+      </p>
+
+      <p class="frase-final">
+        Pase lo que pase, siempre guardaré con cariño
+        nuestra historia y nuestra amistad. 💗
+      </p>
+
+      <p class="firma">
+        Feliz cumpleaños Jossita, mi mejor amiga.<br>
+        Gracias por formar parte de mi vida, <br>
+        att y con mucho cariño Santy. 🌷
+      </p>
+    </article>
+
+    <button id="repetir" class="boton-neon boton-repetir">
+      VOLVER A VER LA SORPRESA ↻
+    </button>
+
+
+  </main>
+
+  <script src="FuegosArtificiales.js"></script>
+</body>
+</html>
