@@ -384,7 +384,19 @@ botonSaltar.addEventListener("click", () => {
   mostrarEscena(escenaActual + 1);
 });
 
-botonRepetir.addEventListener("click", empezarSorpresa);
+document.getElementById("repetir").addEventListener("click", () => {
+  // NO pausamos ni reiniciamos la música
+
+  // Ocultar la sorpresa
+  document.body.classList.remove("iniciado");
+
+  document.getElementById("final").classList.remove("visible");
+  document.getElementById("historia").classList.remove("visible");
+  document.getElementById("inicio").classList.remove("oculto");
+
+  // Regresar arriba
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 // Mostrar un aviso si todavía no se ha añadido la fotografía.
 const fotoAmiga = document.getElementById("fotoAmiga");
