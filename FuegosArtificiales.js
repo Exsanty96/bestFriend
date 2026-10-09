@@ -399,3 +399,21 @@ fotoAmiga.addEventListener("load", () => {
   fotoAmiga.style.display = "block";
   avisoFoto.style.display = "none";
 });
+const musica = document.getElementById("musicaFondo");
+const botonMusica = document.getElementById("botonMusica");
+
+musica.volume = 0.35;
+
+botonMusica.addEventListener("click", async () => {
+  if (musica.paused) {
+    try {
+      await musica.play();
+      botonMusica.textContent = "⏸️ Pausar música";
+    } catch (error) {
+      console.error("No se pudo reproducir la canción:", error);
+    }
+  } else {
+    musica.pause();
+    botonMusica.textContent = "🎵 Activar música";
+  }
+});
